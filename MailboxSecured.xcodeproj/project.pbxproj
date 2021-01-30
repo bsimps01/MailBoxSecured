@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B71242925C55E8C00A31B3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B71242825C55E8C00A31B3B /* AppDelegate.swift */; };
+		1B71242B25C55E8C00A31B3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B71242A25C55E8C00A31B3B /* SceneDelegate.swift */; };
+		1B71242D25C55E8C00A31B3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B71242C25C55E8C00A31B3B /* ViewController.swift */; };
+		1B71243025C55E8C00A31B3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B71242E25C55E8C00A31B3B /* Main.storyboard */; };
+		1B71243225C55E8E00A31B3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B71243125C55E8E00A31B3B /* Assets.xcassets */; };
+		1B71243525C55E8E00A31B3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B71243325C55E8E00A31B3B /* LaunchScreen.storyboard */; };
+		1B71247625C56DA200A31B3B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B71247525C56DA200A31B3B /* HomeViewController.swift */; };
+		2D9BFFDA8F594FAA0B0558ED /* Pods_MailboxSecured.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AEDB7BB9BB3F51718C6105 /* Pods_MailboxSecured.framework */; };
+		5D6F4E2E8512405BA43F4EAC /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E28B02E3DAB74A1F84BF701D /* amplifyconfiguration.json */; };
+		CF599F6CA5284E9386DCEA1F /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = A93259954F184F75AD401F38 /* awsconfiguration.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06AEDB7BB9BB3F51718C6105 /* Pods_MailboxSecured.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MailboxSecured.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B71242525C55E8C00A31B3B /* MailboxSecured.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailboxSecured.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B71242825C55E8C00A31B3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1B71242A25C55E8C00A31B3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1B71242C25C55E8C00A31B3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B71242F25C55E8C00A31B3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B71243125C55E8E00A31B3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B71243425C55E8E00A31B3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1B71243625C55E8E00A31B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B71247525C56DA200A31B3B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8C2B95C1D7A7CD7D9C4A62E3 /* Pods-MailboxSecured.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailboxSecured.release.xcconfig"; path = "Target Support Files/Pods-MailboxSecured/Pods-MailboxSecured.release.xcconfig"; sourceTree = "<group>"; };
+		9DECBA5F867A41CAAA04CF8D /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
+		A93259954F184F75AD401F38 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
+		E28B02E3DAB74A1F84BF701D /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		EB9B793A6255B02E08D85455 /* Pods-MailboxSecured.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailboxSecured.debug.xcconfig"; path = "Target Support Files/Pods-MailboxSecured/Pods-MailboxSecured.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B71242225C55E8C00A31B3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D9BFFDA8F594FAA0B0558ED /* Pods_MailboxSecured.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B71241C25C55E8C00A31B3B = {
+			isa = PBXGroup;
+			children = (
+				4F5D1E8A2ABF48218B2677E8 /* AmplifyConfig */,
+				1B71242725C55E8C00A31B3B /* MailboxSecured */,
+				1B71242625C55E8C00A31B3B /* Products */,
+				CCB900DF3203EBF4F633222A /* Pods */,
+				DC9878D8AE4B706A4860E9B2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1B71242625C55E8C00A31B3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B71242525C55E8C00A31B3B /* MailboxSecured.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B71242725C55E8C00A31B3B /* MailboxSecured */ = {
+			isa = PBXGroup;
+			children = (
+				1B71242825C55E8C00A31B3B /* AppDelegate.swift */,
+				1B71242A25C55E8C00A31B3B /* SceneDelegate.swift */,
+				1B71242C25C55E8C00A31B3B /* ViewController.swift */,
+				1B71247525C56DA200A31B3B /* HomeViewController.swift */,
+				1B71242E25C55E8C00A31B3B /* Main.storyboard */,
+				1B71243125C55E8E00A31B3B /* Assets.xcassets */,
+				1B71243325C55E8E00A31B3B /* LaunchScreen.storyboard */,
+				1B71243625C55E8E00A31B3B /* Info.plist */,
+			);
+			path = MailboxSecured;
+			sourceTree = "<group>";
+		};
+		4F5D1E8A2ABF48218B2677E8 /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				9DECBA5F867A41CAAA04CF8D /* amplifytools.xcconfig */,
+				E28B02E3DAB74A1F84BF701D /* amplifyconfiguration.json */,
+				A93259954F184F75AD401F38 /* awsconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			path = .;
+			sourceTree = "<group>";
+		};
+		CCB900DF3203EBF4F633222A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB9B793A6255B02E08D85455 /* Pods-MailboxSecured.debug.xcconfig */,
+				8C2B95C1D7A7CD7D9C4A62E3 /* Pods-MailboxSecured.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DC9878D8AE4B706A4860E9B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06AEDB7BB9BB3F51718C6105 /* Pods_MailboxSecured.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B71242425C55E8C00A31B3B /* MailboxSecured */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B71243925C55E8E00A31B3B /* Build configuration list for PBXNativeTarget "MailboxSecured" */;
+			buildPhases = (
+				1944D832DA2F2E5834986FD9 /* [CP] Check Pods Manifest.lock */,
+				1B71242125C55E8C00A31B3B /* Sources */,
+				1B71242225C55E8C00A31B3B /* Frameworks */,
+				1B71242325C55E8C00A31B3B /* Resources */,
+				9DAE2158AE4E69EF7F84FB79 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MailboxSecured;
+			productName = MailboxSecured;
+			productReference = 1B71242525C55E8C00A31B3B /* MailboxSecured.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B71241D25C55E8C00A31B3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					1B71242425C55E8C00A31B3B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 1B71242025C55E8C00A31B3B /* Build configuration list for PBXProject "MailboxSecured" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B71241C25C55E8C00A31B3B;
+			productRefGroup = 1B71242625C55E8C00A31B3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B71242425C55E8C00A31B3B /* MailboxSecured */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B71242325C55E8C00A31B3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B71243525C55E8E00A31B3B /* LaunchScreen.storyboard in Resources */,
+				1B71243225C55E8E00A31B3B /* Assets.xcassets in Resources */,
+				1B71243025C55E8C00A31B3B /* Main.storyboard in Resources */,
+				5D6F4E2E8512405BA43F4EAC /* amplifyconfiguration.json in Resources */,
+				CF599F6CA5284E9386DCEA1F /* awsconfiguration.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1944D832DA2F2E5834986FD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MailboxSecured-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DAE2158AE4E69EF7F84FB79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MailboxSecured/Pods-MailboxSecured-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MailboxSecured/Pods-MailboxSecured-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MailboxSecured/Pods-MailboxSecured-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B71242125C55E8C00A31B3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B71242D25C55E8C00A31B3B /* ViewController.swift in Sources */,
+				1B71242925C55E8C00A31B3B /* AppDelegate.swift in Sources */,
+				1B71242B25C55E8C00A31B3B /* SceneDelegate.swift in Sources */,
+				1B71247625C56DA200A31B3B /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1B71242E25C55E8C00A31B3B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B71242F25C55E8C00A31B3B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1B71243325C55E8E00A31B3B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B71243425C55E8E00A31B3B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B71243725C55E8E00A31B3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1B71243825C55E8E00A31B3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B71243A25C55E8E00A31B3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB9B793A6255B02E08D85455 /* Pods-MailboxSecured.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4KT624V79W;
+				INFOPLIST_FILE = MailboxSecured/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.benjamin5311.MailboxSecured;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1B71243B25C55E8E00A31B3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C2B95C1D7A7CD7D9C4A62E3 /* Pods-MailboxSecured.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4KT624V79W;
+				INFOPLIST_FILE = MailboxSecured/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.benjamin5311.MailboxSecured;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B71242025C55E8C00A31B3B /* Build configuration list for PBXProject "MailboxSecured" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B71243725C55E8E00A31B3B /* Debug */,
+				1B71243825C55E8E00A31B3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B71243925C55E8E00A31B3B /* Build configuration list for PBXNativeTarget "MailboxSecured" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B71243A25C55E8E00A31B3B /* Debug */,
+				1B71243B25C55E8E00A31B3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B71241D25C55E8C00A31B3B /* Project object */;
+}

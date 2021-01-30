@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mailboxsecured-dev-13126-authRole",
+      "UnauthRoleArn": "arn:aws:iam::205543678423:role/amplify-mailboxsecured-dev-13126-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::205543678423:role/amplify-mailboxsecured-dev-13126-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-mailboxsecured-dev-13126-deployment",
+      "UnauthRoleName": "amplify-mailboxsecured-dev-13126-unauthRole",
+      "StackName": "amplify-mailboxsecured-dev-13126",
+      "StackId": "arn:aws:cloudformation:us-west-2:205543678423:stack/amplify-mailboxsecured-dev-13126/ef14bbe0-62dd-11eb-9396-0684ebec448d",
+      "AmplifyAppId": "d3paoi8y5n1yxt"
+    },
+    "categories": {
+      "auth": {
+        "mailboxsecured713c862d": {}
+      }
+    }
+  }
+}

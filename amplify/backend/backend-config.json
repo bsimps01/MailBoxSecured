@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "mailboxsecured713c862d": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
