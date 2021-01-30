@@ -5,69 +5,96 @@
 //  Created by Benjamin Simpson on 1/30/21.
 //
 
-import Foundation
-import UIKit
 import CoreBluetooth
+import UIKit
 
-class HomeViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDelegate{
+class ParticlePeripheral: NSObject {
+    public static let mailboxBluetooth = CBUUID.init(string: "b4250401-fb4b-4746-b2b0-93f0e61122c6")
+}
+
+class HomeViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDelegate {
     
-    var manager: CBCentralManager!
-    var peripheral: CBPeripheral!
+    let bluetoothConnectButton = UIButton()
     
-    let BEAN_NAME = "Robu"
-    let BEAN_SCRATCH_UUID =
-      CBUUID(string: "a495ff21-c5b1-4b44-b512-1370f02d74de")
-    let BEAN_SERVICE_UUID =
-      CBUUID(string: "a495ff20-c5b1-4b44-b512-1370f02d74de")
+    private var centralManager: CBCentralManager!
+    private var peripheral: CBPeripheral!
     
-    override func viewDidLoad() {
+    
+    override func viewDidLoad(){
         super.viewDidLoad()
-        view.backgroundColor = .blue
-        manager = CBCentralManager(delegate: self, queue: nil)
+        
+        bluetoothButtonConfiguration()
     }
     
-    func centralManagerDidUpdateState(_ central: CBCentralManager) {
-        if central.state == CBManagerState.poweredOn {
-        central.scanForPeripherals(withServices: nil, options: nil)
-      } else {
-        print("Bluetooth not available.")
-      }
+    func bluetoothButtonConfiguration(){
+        view.addSubview(bluetoothConnectButton)
+        bluetoothConnectButton.translatesAutoresizingMaskIntoConstraints = false
+        bluetoothConnectButton.layer.cornerRadius = 30
+        bluetoothConnectButton.setTitle("Log In", for: .normal)
+        bluetoothConnectButton.backgroundColor = .systemBlue
+        
+        bluetoothConnectButton.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
+        
+        bluetoothConnectButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        bluetoothConnectButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 300).isActive = true
+        bluetoothConnectButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25).isActive = true
+        bluetoothConnectButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25).isActive = true
+        bluetoothConnectButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -300).isActive = true
     }
     
-    private func peripheral(
-      peripheral: CBPeripheral,
-      didDiscoverServices error: NSError?) {
-      for service in peripheral.services! {
-        let thisService = service as CBService
+    @objc func buttonPressed(){
+        centralManager = CBCentralManager(delegate: self, queue: nil)
+    }
+    
+    // If we're powered on, start scanning
+            func centralManagerDidUpdateState(_ central: CBCentralManager) {
+                print("Central state update")
+                if central.state != .poweredOn {
+                    print("Central is not powered on")
+                } else {
+                    print("Central scanning for", ParticlePeripheral.mailboxBluetooth);
+                    centralManager.scanForPeripherals(withServices: [ParticlePeripheral.mailboxBluetooth],
+                                                      options: [CBCentralManagerScanOptionAllowDuplicatesKey : true])
+                }
+            }
+    
+    // Handles the result of the scan
+        func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
 
-        if service.uuid == BEAN_SERVICE_UUID {
-            peripheral.discoverCharacteristics(
-                nil,
-                for: thisService
-          )
+            // We've found it so stop scan
+            self.centralManager.stopScan()
+
+            // Copy the peripheral instance
+            self.peripheral = peripheral
+            self.peripheral.delegate = self
+
+            // Connect!
+            self.centralManager.connect(self.peripheral, options: nil)
+
         }
-      }
-    }
     
-    private func centralManager(
-      central: CBCentralManager,
-      didDiscoverPeripheral peripheral: CBPeripheral,
-      advertisementData: [String : AnyObject],
-      RSSI: NSNumber) {
-      let device = (advertisementData as NSDictionary)
-        .object(forKey: CBAdvertisementDataLocalNameKey)
-        as? NSString
-            
-        if device?.contains(BEAN_NAME) == true {
-        self.manager.stopScan()
-                
-        self.peripheral = peripheral
-        self.peripheral.delegate = self
-                
-            manager.connect(peripheral, options: nil)
-      }
-    }
+    // The handler if we do connect succesfully
+        func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
+            if peripheral == self.peripheral {
+                print("Connected to your Mailbox!")
+                peripheral.discoverServices([ParticlePeripheral.mailboxBluetooth])
+            }
+        }
     
+    // Handles discovery event
+        func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
+            if let services = peripheral.services {
+                for service in services {
+                    if service.uuid == ParticlePeripheral.mailboxBluetooth {
+                        print("Mailbox discovered")
+                        //Now kick off discovery of characteristics
+                        peripheral.discoverCharacteristics([ParticlePeripheral.mailboxBluetooth], for: service)
+                        return
+                    }
+                }
+            }
+        }
     
 }
+
 
