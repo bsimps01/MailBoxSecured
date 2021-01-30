@@ -16,8 +16,8 @@
 		1B71247625C56DA200A31B3B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B71247525C56DA200A31B3B /* HomeViewController.swift */; };
 		1B71247925C5F39800A31B3B /* MailBoxLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B71247825C5F39800A31B3B /* MailBoxLock.swift */; };
 		2D9BFFDA8F594FAA0B0558ED /* Pods_MailboxSecured.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AEDB7BB9BB3F51718C6105 /* Pods_MailboxSecured.framework */; };
-		5D6F4E2E8512405BA43F4EAC /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E28B02E3DAB74A1F84BF701D /* amplifyconfiguration.json */; };
-		CF599F6CA5284E9386DCEA1F /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = A93259954F184F75AD401F38 /* awsconfiguration.json */; };
+		9AB2095F69AC46C99AA44AE0 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = D5245504814B440894888375 /* amplifyconfiguration.json */; };
+		CD6F2E16EA9649D19C702BBC /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 0381B3690232418193221722 /* awsconfiguration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,10 +33,10 @@
 		1B71247525C56DA200A31B3B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1B71247825C5F39800A31B3B /* MailBoxLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailBoxLock.swift; sourceTree = "<group>"; };
 		8C2B95C1D7A7CD7D9C4A62E3 /* Pods-MailboxSecured.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailboxSecured.release.xcconfig"; path = "Target Support Files/Pods-MailboxSecured/Pods-MailboxSecured.release.xcconfig"; sourceTree = "<group>"; };
-		9DECBA5F867A41CAAA04CF8D /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
-		A93259954F184F75AD401F38 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
-		E28B02E3DAB74A1F84BF701D /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		EB9B793A6255B02E08D85455 /* Pods-MailboxSecured.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailboxSecured.debug.xcconfig"; path = "Target Support Files/Pods-MailboxSecured/Pods-MailboxSecured.debug.xcconfig"; sourceTree = "<group>"; };
+		66940B2186DE4291B591FCA8 /* amplifytools.xcconfig */ = {isa = PBXFileReference; name = "amplifytools.xcconfig"; path = "amplifytools.xcconfig"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = text.xcconfig; explicitFileType = undefined; includeInIndex = 0; };
+		D5245504814B440894888375 /* amplifyconfiguration.json */ = {isa = PBXFileReference; name = "amplifyconfiguration.json"; path = "amplifyconfiguration.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0381B3690232418193221722 /* awsconfiguration.json */ = {isa = PBXFileReference; name = "awsconfiguration.json"; path = "awsconfiguration.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 		1B71241C25C55E8C00A31B3B = {
 			isa = PBXGroup;
 			children = (
-				4F5D1E8A2ABF48218B2677E8 /* AmplifyConfig */,
+				B5AF38835FBC460EBBA52423 /* AmplifyConfig */,
 				1B71242725C55E8C00A31B3B /* MailboxSecured */,
 				1B71242625C55E8C00A31B3B /* Products */,
 				CCB900DF3203EBF4F633222A /* Pods */,
@@ -86,17 +86,6 @@
 			path = MailboxSecured;
 			sourceTree = "<group>";
 		};
-		4F5D1E8A2ABF48218B2677E8 /* AmplifyConfig */ = {
-			isa = PBXGroup;
-			children = (
-				9DECBA5F867A41CAAA04CF8D /* amplifytools.xcconfig */,
-				E28B02E3DAB74A1F84BF701D /* amplifyconfiguration.json */,
-				A93259954F184F75AD401F38 /* awsconfiguration.json */,
-			);
-			name = AmplifyConfig;
-			path = .;
-			sourceTree = "<group>";
-		};
 		CCB900DF3203EBF4F633222A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +101,25 @@
 				06AEDB7BB9BB3F51718C6105 /* Pods_MailboxSecured.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5AF38835FBC460EBBA52423 /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				66940B2186DE4291B591FCA8 /* amplifytools.xcconfig */,
+				D5245504814B440894888375 /* amplifyconfiguration.json */,
+				0381B3690232418193221722 /* awsconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			path = .;
+			sourceTree = "<group>";
+		};
+		4EA72C65C3D74ECCB7233765 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			path = undefined;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,8 +184,8 @@
 				1B71243525C55E8E00A31B3B /* LaunchScreen.storyboard in Resources */,
 				1B71243225C55E8E00A31B3B /* Assets.xcassets in Resources */,
 				1B71243025C55E8C00A31B3B /* Main.storyboard in Resources */,
-				5D6F4E2E8512405BA43F4EAC /* amplifyconfiguration.json in Resources */,
-				CF599F6CA5284E9386DCEA1F /* awsconfiguration.json in Resources */,
+				9AB2095F69AC46C99AA44AE0 /* amplifyconfiguration.json in Resources */,
+				CD6F2E16EA9649D19C702BBC /* awsconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,6 +23,7 @@ class MailBoxLock: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupControl()
+        self.view.backgroundColor = .white
     }
     
     func setupControl(){
@@ -31,7 +32,7 @@ class MailBoxLock: UIViewController {
         mailboxLock.selectedSegmentIndex = 0
         mailboxLock.addTarget(self, action: #selector(key), for: .valueChanged)
         self.view.addSubview(mailboxLock)
-        mailboxLock.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
+        mailboxLock.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 275).isActive = true
         mailboxLock.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20).isActive = true
         mailboxLock.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20).isActive = true
         mailboxLock.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
@@ -41,7 +42,7 @@ class MailBoxLock: UIViewController {
         switch mailboxLock.selectedSegmentIndex {
         case 0:
             print("locked")
-            notifyAlert.messageColor = .blue
+            notifyAlert.messageColor = .white
             self.view.makeToast("Mailbox is Secured", duration: 2.0, position: .bottom, style: notifyAlert)
         case 1:
             print("unlocked")

@@ -30,7 +30,7 @@ class HomeViewController: UIViewController, CBPeripheralDelegate, CBCentralManag
         view.addSubview(bluetoothConnectButton)
         bluetoothConnectButton.translatesAutoresizingMaskIntoConstraints = false
         bluetoothConnectButton.layer.cornerRadius = 30
-        bluetoothConnectButton.setTitle("Log In", for: .normal)
+        bluetoothConnectButton.setTitle("Bluetooth Connection", for: .normal)
         bluetoothConnectButton.backgroundColor = .systemBlue
         
         bluetoothConnectButton.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
