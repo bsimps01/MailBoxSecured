@@ -7,8 +7,11 @@
 
 import Foundation
 import UIKit
+import Toast_Swift
 
 class MailBoxLock: UIViewController {
+    
+    var notifyAlert = ToastStyle()
     
     let mailboxLock: UISegmentedControl = {
         let control = UISegmentedControl()
@@ -38,8 +41,12 @@ class MailBoxLock: UIViewController {
         switch mailboxLock.selectedSegmentIndex {
         case 0:
             print("locked")
+            notifyAlert.messageColor = .blue
+            self.view.makeToast("Mailbox is Secured", duration: 2.0, position: .bottom, style: notifyAlert)
         case 1:
             print("unlocked")
+            notifyAlert.messageColor = .green
+            self.view.makeToast("Mailbox is Unlocked", duration: 2.0, position: .bottom, style: notifyAlert)
         default:
             break
         }

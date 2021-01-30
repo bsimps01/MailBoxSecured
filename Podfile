@@ -9,5 +9,6 @@ target 'MailboxSecured' do
   pod 'AWSUserPoolsSignIn'
   pod 'AWSAuthUI'
   pod 'AWSMobileClient'
+  pod 'Toast-Swift'
 
 end

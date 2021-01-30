@@ -18,11 +18,13 @@ PODS:
     - AWSAuthCore (= 2.22.1)
     - AWSCognitoIdentityProvider (= 2.22.1)
     - AWSCore (= 2.22.1)
+  - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
   - AWSAuthUI
   - AWSMobileClient
   - AWSUserPoolsSignIn
+  - Toast-Swift
 
 SPEC REPOS:
   trunk:
@@ -33,6 +35,7 @@ SPEC REPOS:
     - AWSCore
     - AWSMobileClient
     - AWSUserPoolsSignIn
+    - Toast-Swift
 
 SPEC CHECKSUMS:
   AWSAuthCore: ad355f72d2d3e56939fb3b2965b796a93091cdf1
@@ -42,7 +45,8 @@ SPEC CHECKSUMS:
   AWSCore: f3f2e25cf5b4cb58b9561b48987d4fdd019227c2
   AWSMobileClient: 70c694a0399c37084edaaebe8e1f1b6f21fd299f
   AWSUserPoolsSignIn: 3d8a65cbf5e2668d607c05681e41c3542cc5f6f1
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: e16f4f9a2c99d26520d8083e8f2b88093c231ee4
+PODFILE CHECKSUM: 9a8050f4adf7c1307dadf6ab561bbf4daf94551b
 
 COCOAPODS: 1.10.1

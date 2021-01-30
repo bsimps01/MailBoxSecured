@@ -6,3 +6,4 @@ ${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderAS
 ${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework
 ${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework
 ${BUILT_PRODUCTS_DIR}/AWSUserPoolsSignIn/AWSUserPoolsSignIn.framework
+${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework
