@@ -14,6 +14,7 @@
 		1B71243225C55E8E00A31B3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B71243125C55E8E00A31B3B /* Assets.xcassets */; };
 		1B71243525C55E8E00A31B3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B71243325C55E8E00A31B3B /* LaunchScreen.storyboard */; };
 		1B71247625C56DA200A31B3B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B71247525C56DA200A31B3B /* HomeViewController.swift */; };
+		1B71247925C5F39800A31B3B /* MailBoxLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B71247825C5F39800A31B3B /* MailBoxLock.swift */; };
 		2D9BFFDA8F594FAA0B0558ED /* Pods_MailboxSecured.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AEDB7BB9BB3F51718C6105 /* Pods_MailboxSecured.framework */; };
 		5D6F4E2E8512405BA43F4EAC /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E28B02E3DAB74A1F84BF701D /* amplifyconfiguration.json */; };
 		CF599F6CA5284E9386DCEA1F /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = A93259954F184F75AD401F38 /* awsconfiguration.json */; };
@@ -30,6 +31,7 @@
 		1B71243425C55E8E00A31B3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B71243625C55E8E00A31B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B71247525C56DA200A31B3B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1B71247825C5F39800A31B3B /* MailBoxLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailBoxLock.swift; sourceTree = "<group>"; };
 		8C2B95C1D7A7CD7D9C4A62E3 /* Pods-MailboxSecured.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailboxSecured.release.xcconfig"; path = "Target Support Files/Pods-MailboxSecured/Pods-MailboxSecured.release.xcconfig"; sourceTree = "<group>"; };
 		9DECBA5F867A41CAAA04CF8D /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
 		A93259954F184F75AD401F38 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				1B71242A25C55E8C00A31B3B /* SceneDelegate.swift */,
 				1B71242C25C55E8C00A31B3B /* ViewController.swift */,
 				1B71247525C56DA200A31B3B /* HomeViewController.swift */,
+				1B71247825C5F39800A31B3B /* MailBoxLock.swift */,
 				1B71242E25C55E8C00A31B3B /* Main.storyboard */,
 				1B71243125C55E8E00A31B3B /* Assets.xcassets */,
 				1B71243325C55E8E00A31B3B /* LaunchScreen.storyboard */,
@@ -229,6 +232,7 @@
 			files = (
 				1B71242D25C55E8C00A31B3B /* ViewController.swift in Sources */,
 				1B71242925C55E8C00A31B3B /* AppDelegate.swift in Sources */,
+				1B71247925C5F39800A31B3B /* MailBoxLock.swift in Sources */,
 				1B71242B25C55E8C00A31B3B /* SceneDelegate.swift in Sources */,
 				1B71247625C56DA200A31B3B /* HomeViewController.swift in Sources */,
 			);

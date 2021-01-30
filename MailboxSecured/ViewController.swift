@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     }
     
     func showSignIn(){
-        
+        //Handles status of user being logged in
         if !AWSSignInManager.sharedInstance().isLoggedIn {
             AWSAuthUIViewController.presentViewController(with: self.navigationController!, configuration: nil, completionHandler: { (provider: AWSSignInProvider, error:Error?) in
                     if error != nil {

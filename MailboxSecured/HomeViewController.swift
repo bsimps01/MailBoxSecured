@@ -78,6 +78,7 @@ class HomeViewController: UIViewController, CBPeripheralDelegate, CBCentralManag
             if peripheral == self.peripheral {
                 print("Connected to your Mailbox!")
                 peripheral.discoverServices([ParticlePeripheral.mailboxBluetooth])
+                self.view.window?.rootViewController = MailBoxLock()
             }
         }
     
