@@ -25,7 +25,7 @@ class ViewController: UIViewController {
                         print("Error occurred: \(String(describing: error))")
                     } else {
                         print("Logged in with provider: \(provider.identityProviderName) with Token: \(provider.token())")
-                        //self.view.window!.rootViewController = HomeViewController()
+                        self.view.window?.rootViewController = HomeViewController()
                     }
                     
                 })
